@@ -1,2 +1,13 @@
-# gitops-hello-world-infra-production
-GitOps infrastructure configuration for production.
+# GitOps Hello World Production
+
+GitOps [hello world](https://github.com/crowdynews/gitops-hello-world-gcb) REST API infrastructure
+configuration for production.
+
+## Caveats
+
+### Identity & Access Management Roles
+
+GCP IAM requires `[PROJECT_ID]@cloudbuild.gserviceaccount.com` to have the following roles:
+
+* Cloud Container Builder
+* Kubernetes Engine Developer
